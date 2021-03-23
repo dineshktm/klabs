@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Labs India</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-image">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- JQuery -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
+
+    <!-- JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding-bottom: 0px;">
+    <a class="navbar-brand" href="#"> 
+        <img src="./img/klabslogo.png"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link active-cont" href="KL.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+              <a class="dropdown-item" href="app_development.html">Application Development</a>
+              <a class="dropdown-item" href="bc.html">Branding & Creative</a>
+              <a class="dropdown-item" href="#">Social Media Marketing</a>
+              <a class="dropdown-item" href="#">Website Design And Development</a>
+              <a class="dropdown-item" href="#">Search Engine Optimization</a>
+            </div>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ourworks.html">Our Work</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+    
+      <!--FOR BANNER-->
+      <div  class="banner" >
+        <div class="bannertitle">
+          <h1>K Labs</h1>
+          <h6>Knowledge Empowers</h6>
+        </div>
+        <img    src="./img/1.jpg" width="90%"  height="90%" class="mySlides">
+        <img    src="./img/2.jpg" width="90%"  height="90%" class="mySlides">
+        <img    src="./img/3.jpg" width="90%"  height="90%"class="mySlides">
+        <img    src="./img/4.jpg" width="90%"  height="90%" class="mySlides" >
+      </div><br><br>
+      <div id="particles-js"></div>
+
+      <!--FOR OURWORKS-->
+      <div class="ourwork">
+        <h1 id="heading">Our works</h1>
+        <hr class="underline">
+        <p id="wdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi ullam earum consequuntur quos vero ea, sequi aliquid quis voluptatum non cumque maxime tempore quaerat, deleniti ipsa voluptates. Laboriosam, excepturi!.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi ullam earum consequuntur quos vero ea, sequi aliquid quis voluptatum non cumque maxime tempore quaerat, deleniti ipsa voluptates. Laboriosam, excepturi!.
+        </p>
+        <div class="swipme">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" ><img class="img-fluid" src="./img/w1.jpg" alt=""></div>
+                <div class="swiper-slide" ><img class="img-fluid" src="./img/w2.jpg" alt=""></div>
+                <div class="swiper-slide" ><img class="img-fluid" src="./img/w3.jpg" alt=""></div>
+                <div class="swiper-slide" ><img class="img-fluid" src="./img/w4.jpg" alt=""></div>
+                <div class="swiper-slide" ><img class="img-fluid" src="./img/w5.jpg" alt=""></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+             </div>
+             <div class="readbtn">
+              <a class="btn readmore" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Read More
+              </a>
+             </div>
+          </div>
+      </div>
+    <!--FOR OUR SERVICES-->
+    <section>
+
+      <div class="services">        
+        <h1 id="sheading">Our services</h1> 
+      <hr class="underline">
+          
+            <div class="servicecontainer row">
+              <div class="col-md-4">
+                <div class="cards" >
+                  <div class="imgbx">
+                    <img src="./img/web.png" alt="" height="400px" width="300px">
+                  </div>
+                  <div class="content">
+                      <div class="contentbx">
+                          <h1>APPLICATION DEVELOPMENT</h1><h6 id="quotes">Creative feels in looks</h6>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="cards" style="background-color: white;">
+                    <div class="imgbx">
+                      <img src="./img/branding&creative.jpg" style="height:100%; padding-bottom:70px;" alt="" height="400px" width="300px">
+                    </div>
+                    <div class="content">
+                        <div class="contentbx">
+                            <h1>BRANDING & CREATIVE</h1><h6 id="quotes">Creative feels in looks</h6>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="cards" style="background-color: white;">
+                    <div class="imgbx">
+                      <img src="./img/socialmedia.jpg" style="max-height:280px; padding-bottom:70px;" alt="" height="400px" width="300px">
+                    </div>
+                    <div class="content">
+                        <div class="contentbx">
+                            <h1>SOCIAL MEDIA MARKETING</h1><h6 id="quotes">Creative feels in looks</h6>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                <div class="servicecontainer row">
+                  <div class="col-md-4">
+                    <div class="cards">
+                        <div class="imgbx">
+                          <img src="./img/web.png" alt="" height="400px" width="300px">
+                        </div>
+                        <div class="content">
+                            <div class="contentbx">
+                                <h1>WEB DESIGN AND DEVELOPMENT</h1><h6 id="quotes">Design + thinking</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="cards" style="background-color: white;">
+                    <div class="imgbx">
+                      <img src="./img/seo.jpg" alt="" height="400px" width="300px" style="max-height:400px; padding-bottom:70px;">
+                    </div>
+                    <div class="content">
+                        <div class="contentbx">
+                            <h1>SEARCH ENGINE OPTIMIZATION</h1><h6 id="quotes">Creative feels in looks</h6>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="col-md-4">
+                <div class="cards" style="background-color: white;" >
+                    <div class="imgbx">
+                      <img src="./img/website.jpg" alt="" height="400px" width="300px" style="max-height:250px; padding-bottom:70px;">
+                    </div>
+                    <div class="content">
+                        <div class="contentbx">
+                            <h1>WEB DEVELOPMENT</h1><h6 id="quotes">Creative feels in looks</h6>
+                        </div>
+                    </div>
+                </div>
+                </div>                
+            </div>          
+      </div>
+  </section>
+    <!--FOR FOOTER-->
+    <footer>
+      <div class="uppercontainer row">
+        <div class="col-md-4">
+          <h3>About KLabs</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quod odit at voluptatibus molestiae tempora aut voluptate repellat corporis quasi.</p>
+          <a class="btn">Contact Us</a>
+        </div>
+        <div class="col-md-3">
+          <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">What We Do</a></li>
+                <li><a href="#">Our Process</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+        <h3>Services</h3>
+            <ul>
+                <li><a href="#">Application Development</a></li>
+                <li><a href="#">Branding & Creative</a></li>
+                <li><a href="#">Social Media Marketing</a></li>
+                <li><a href="#">Website Design and Development</a></li>
+                <li><a href="#">Search Engine Optimization</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+          <h3>Leagle</h3>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="lowercontainer row">
+        <div class="col-md-6">
+          <h6>©2021 KLabs </h6>
+        </div>
+        <div class="col-md-6 contact">
+          <li class="fab fa-instagram-square fa-2x"></li>
+          <li class="fab fa-facebook-square fa-2x"></li>
+          <li class="fab fa-twitter-square fa-2x"></li>
+          <li class="fab fa-google-plus-square fa-2x"></li>
+        </div>
+      </div>
+  </footer>  
+  <script src="./js/particles.js"></script>
+  <script src="./js/app.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./js/main.js"></script>  
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 30,
+        stretch: 0,
+        depth: 250,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    var rocket = document.querySelector('#particles-js');
+    var l=document.querySelector(".banner");
+    l.addEventListener("mousemove",function(e){
+      rocket.style.display="block";
+      if(e.offsetY>document.documentElement.clientHeight-200){
+        rocket.style.height=document.documentElement.clientHeight-e.offsetY+'px';
+        var h=parseInt(rocket.style.height)/2;
+        rocket.style.left=e.offsetX+125+ 'px';
+        rocket.style.top =e.offsetY-h+ 'px';
+      }
+      else{
+        rocket.style.height="250px";
+          rocket.style.left=e.offsetX+125+ 'px';
+        rocket.style.top =e.offsetY-125+ 'px';
+      }
+    })
+    document.querySelector(".bannertitle").addEventListener("mouseover",(e)=>{
+      rocket.style.display='none';
+    })
+    document.querySelector(".bannertitle").addEventListener("mouseout",(e)=>{
+      rocket.style.display='block';
+    })
+    document.querySelector(".ourwork").addEventListener("mouseenter",()=>{
+      rocket.style.display='none';
+    })
+
+    </script>
+</body>
+<script src="./js/slide.js"></script> 
+</html>

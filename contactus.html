@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-image">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/contactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding-bottom: 0px;">
+        <a class="navbar-brand" href="#"> 
+            <img src="./img/klabslogo.png"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="KL.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+                  <a class="dropdown-item" href="#">Application Development</a>
+                  <a class="dropdown-item" href="#">Branding & Creative</a>
+                  <a class="dropdown-item" href="#">Social Media Marketing</a>
+                  <a class="dropdown-item" href="#">Website Design And Development</a>
+                  <a class="dropdown-item" href="#">Search Engine Optimization</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourworks.html">Our Work</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link active-cont" href="contactUs.html">Contact Us</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="contactdiv row">
+        <div class="contactform col-md-6">
+            <form action="./confirmation.php" method="POST" name="form" class="form-group row">
+              <div class="col-md-12">
+                <h3>Have something for us ?</h3>          
+                <h2 id="contactnow">Contact Now</h2>
+              </div>
+                <label class="col-form-label col-sm-5">Name</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="name">
+                </div>
+                <label class="col-form-label col-sm-5">Address</label>
+                <div class="col-sm-6">
+                    <textarea rows="5" type="text" class="form-control" name="address"></textarea>
+                </div> <label class="col-form-label col-sm-5">Email</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="email" >
+                </div> <label class="col-form-label col-sm-5">Phone</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="phone">
+                </div> <label class="col-form-label col-sm-5">Comments</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control" name="comments"></textarea>
+                </div>
+                <div class="submitbtn col-md-6">
+                  <button class="btn readmore" name="submit" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    SEND MESSAGE
+                  </button>
+                  <style>.submitbtn{height:10vh;padding-left: 50%;}</style>
+                </div>
+            </form>
+        </div>
+        <div class="mapper col-md-6">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=K%20labs&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                      </iframe>
+                      <a href="https://yt2.org"></a><br>
+                      <style>.mapouter{position:relative;text-align:center;height:430px;width:100%;}</style>
+                      <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+                  </div>
+              </div>
+        </div>
+      </div>
+      <footer>
+        <div class="uppercontainer row">
+          <div class="col-md-4">
+            <h3>About KLabs</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quod odit at voluptatibus molestiae tempora aut voluptate repellat corporis quasi.</p>
+            <a class="btn">Contact Us</a>
+          </div>
+          <div class="col-md-3">
+            <h3>Company</h3>
+              <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">What We Do</a></li>
+                  <li><a href="#">Our Process</a></li>
+                  <li><a href="#">Careers</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+          <h3>Services</h3>
+              <ul>
+                  <li><a href="#">Application Development</a></li>
+                  <li><a href="#">Branding & Creative</a></li>
+                  <li><a href="#">Social Media Marketing</a></li>
+                  <li><a href="#">Website Design and Development</a></li>
+                  <li><a href="#">Search Engine Optimization</a></li>
+              </ul>
+          </div>
+          <div class="col-md-2">
+            <h3>Leagle</h3>
+            <ul>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="lowercontainer row">
+          <div class="col-md-6">
+            <h6>©2021 KLabs </h6>
+          </div>
+          <div class="col-md-6 contact">
+            <li class="fab fa-instagram-square fa-2x"></li>
+            <li class="fab fa-facebook-square fa-2x"></li>
+            <li class="fab fa-twitter-square fa-2x"></li>
+            <li class="fab fa-google-plus-square fa-2x"></li>
+          </div>
+        </div>
+    </footer>  
+    <script>
+      /* var x = location.search;
+      console.log(x);
+      if(x.includes("mail=success"))
+      {
+      alert("Request sent successfully")
+      }
+      location.search = '' */
+       var url = document.location.href;
+    var params = url.split('?');
+    if (url.includes("mail=success")) {
+    alert("Request sent successfully");
+    if (params.length !== 1) {
+        url = params[0] + "?";
+        params = params[1];
+        params = params.split("&");
+
+        $.each(params, function (index, value) {
+            var v = value.split("=");
+            if (v[0] != key) url += value + "&";
+        });
+
+        url = url.replace(/&$/, "");
+        url = url.replace(/\?$/, "");
+        document.location.href = url;
+    }
+}
+    console.log(url);
+    console.log(params)
+    </script>
+    
+</body>
+</html>
+
+
